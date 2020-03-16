@@ -1,0 +1,5 @@
+Para mandarle monkeys a la app ejecutar el siguiente comando dentro de la carpeta platform-tools
+	adb shell monkey -p org.quantumbadger.redreader --pct-syskeys 0 --pct-nav 0 --pct-motion 0 --pct-trackball 0 --pct-appswitch 0 --pct-anyevent 0 -v 10000
+
+Para mandar todos los eventoscon una semilla de ejemplo
+	adb shell monkey -p org.quantumbadger.redreader --pct-syskeys 0 -v -s 1583758867344 10000
